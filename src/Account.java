@@ -2,12 +2,13 @@ import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.PrivateKey;
 import java.security.Signature;
-
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Account {
 
     public int nonce;
+    private int balance;
     private KeyPair keyPair;
 
 
@@ -38,7 +39,13 @@ public class Account {
         return _sign.verify(_signature);
     }
 
-  
+    public KeyPair getKeyPair(){
+        return keyPair;
+    }
+
+    
+    
+
 
     
 }

@@ -1,10 +1,21 @@
-import java.util.HashMap; 
+import java.util.HashMap;
+import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 import java.util.ArrayList;
 
 public class UTXO {
 
-    //private static HashMap<UTXO,Account> Owner = new HashMap<UTXO,Account>();
-    //private static HashMap<Account,ArrayList<UTXO>> AllUTXOofAccount = new HashMap<Account,ArrayList<UTXO>>();
+    private int valueInWei;
+    private Account owner;
+
+    public int getvalueInWei(){
+        return this.valueInWei;
+    }
+
+    public Account getOwner(){
+        return this.owner;
+    }
+
+    
 
     
 
